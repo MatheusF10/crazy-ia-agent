@@ -1,0 +1,75 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  transition: all 0.5s;
+}
+
+.shake {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(5px, 5px);
+  }
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  75% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes danceMove {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-20px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(150px) rotate(5deg);
+  }
+  75% {
+    transform: translateX(-20px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.dance {
+  animation: danceMove 0.8s ease-in-out infinite;
+  background: black;
+  color: lime;
+}
+
+#input {
+  overflow: hidden;
+  resize: none;
+  width: 300px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 8px;
+  min-height: 40px;
+}
