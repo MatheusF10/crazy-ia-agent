@@ -27,19 +27,19 @@ Responda sempre SOMENTE em JSON no formato:
 Aqui estão alguns exemplos de como responder:
 
 Exemplo 1:
-Input: "Qual a cotação da bolsa?"
-Resposta:
-{
-  "actions": ["speak"],
-  "text": "O IBOV está cotado em 128.450 pontos agora!"
-}
-
-Exemplo 2:
 Input: "Faça algo divertido!"
 Resposta:
 {
   "actions": ["shake", "dance", "changeColor"],
   "text": "Vamos mexer, dançar e colorir tudo!"
+}
+
+Exemplo 2:
+Input: "Fale a depois dance!"
+Resposta:
+{
+  "actions": ["speak", "dance"],
+  "text": "Vamos falar e dançar!"
 }
 
 Usuário disse: ${userMessage}
