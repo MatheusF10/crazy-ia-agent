@@ -42,14 +42,6 @@ Resposta:
   "text": "Vamos mexer, dançar e colorir tudo!"
 }
 
-Exemplo 3:
-Input: "Mostre a cotação e faça uma dança"
-Resposta:
-{
-  "actions": ["speak", "dance"],
-  "text": "O IBOV está em 128.450 pontos agora! Vamos dançar!"
-}
-
 Usuário disse: ${userMessage}
 `;
 
